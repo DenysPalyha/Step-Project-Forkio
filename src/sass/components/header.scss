@@ -1,0 +1,151 @@
+@import "../utils/variables.scss";
+@import "../utils/mixin.scss";
+
+.header {
+  min-width: 320px;
+  background-color: $bg-color-header;
+}
+
+.header__container {
+  min-width: 320px;
+  padding: 0 10px;
+}
+
+.header__wrapper {
+  padding: 32px 0 30px;
+  width: 100%;
+  @include flex($justify: space-between);
+}
+
+.header__logo-img {
+  width: 43px;
+  height: 41px;
+  background-image: url(../../images/icon/Logo-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__logo-text {
+  display: none;
+}
+
+.btn-settings {
+  border: none;
+  outline: none;
+  background: transparent;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.header__btn-buy {
+  min-width: 119px;
+  padding: 11px 0;
+  background: $color-text;
+  color: #fff;
+}
+
+.header__burger {
+  @include flex;
+  flex-direction: column;
+}
+
+.header__burger-btn {
+  position: relative;
+  display: block;
+  width: 26px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.2s linear;
+  &:nth-of-type(1) {
+    margin-left: 11px;
+    margin-bottom: 6px;
+    width: 15px;
+  }
+  &:nth-of-type(2) {
+    margin-bottom: 6px;
+  }
+}
+
+.active {
+  &:nth-of-type(1) {
+    position: relative;
+    top: 3px;
+    right: -1px;
+    width: 26px;
+    margin-left: 0;
+    margin-bottom: 0;
+    transform: rotate(45deg);
+    transition: transform 0.4s ease-in-out;
+  }
+  &:nth-of-type(2) {
+    display: none;
+  }
+  &:nth-of-type(3) {
+    margin-bottom: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.4s ease-in-out;
+  }
+}
+
+.header__list {
+  min-height: 329px;
+  position: absolute;
+  top: -432px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: $bg-color-mod-menu;
+  z-index: 100;
+  transition: 0.3s linear;
+}
+
+.show {
+  top: 102px;
+  transition: 0.3s linear;
+}
+
+.header__item {
+  position: relative;
+  min-width: 292px;
+  padding: 29px 0 21px;
+  border-bottom: 2px solid rgba(78, 70, 70, 0.7);
+}
+
+.header__item-link {
+  display: block;
+  margin-left: 35px;
+  font-family: $ff-family;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 26px;
+  color: #fff;
+
+  &::before {
+    display: inline-block;
+    content: "";
+    opacity: 0;
+    width: 8px;
+    height: 53px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    background: $color-text;
+  }
+
+  &:active {
+    color: $color-text;
+  }
+
+  &:active::before {
+    opacity: 1;
+  }
+
+  &:focus {
+    color: $color-text;
+  }
+
+  &:focus::before {
+    opacity: 1;
+  }
+}
