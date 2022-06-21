@@ -14,6 +14,15 @@
   }
 }
 
+.header__position {
+  @media (min-width: $bp-min-desc) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .header__container {
   min-width: 320px;
   padding: 0 10px;
@@ -73,10 +82,12 @@
 
     &:hover .header__logo-img {
       background-image: url(../../images/icon/logo-hover-1.png);
+      transition: 0.3s linear;
     }
 
     &:hover .header__logo-text {
       color: #fff;
+      transition: 0.3s linear;
     }
   }
 }
@@ -100,7 +111,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 16px;
-    color: $color-text;
+    color: $color-text-header-fork;
     text-transform: uppercase;
   }
 
@@ -111,7 +122,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 16px;
-    color: $color-text;
+    color: $color-text-header-fork;
     text-transform: uppercase;
   }
 }
@@ -127,20 +138,28 @@
 .header__btn-buy {
   min-width: 119px;
   padding: 11px 0;
-  background: $color-text;
+  background: $color-text-header-fork;
   color: #fff;
+  font-family: $ff-family;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 15px;
 
   @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
     min-width: 145px;
+    font-family: $ff-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
 
     &:active {
       background: #fff;
-      color: $color-text;
+      color: $color-text-header-fork;
     }
 
     &:focus {
       background: #fff;
-      color: $color-text;
+      color: $color-text-header-fork;
     }
   }
 
@@ -242,11 +261,11 @@
     position: absolute;
     top: 12px;
     left: 0;
-    background: $color-text;
+    background: $color-text-header-fork;
   }
 
   &:active {
-    color: $color-text;
+    color: $color-text-header-fork;
   }
 
   &:active::before {
@@ -254,7 +273,7 @@
   }
 
   &:focus {
-    color: $color-text;
+    color: $color-text-header-fork;
   }
 
   &:focus::before {
@@ -302,7 +321,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
-    color: $color-text;
+    color: $color-text-header-fork;
 
     &:active {
       color: #fff;
@@ -318,10 +337,11 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 17px;
-    color: $color-text;
+    color: $color-text-header-fork;
 
     &:hover {
       color: #fff;
+      transition: 0.3s linear;
     }
   }
 }
@@ -330,12 +350,17 @@
   @media (min-width: $bp-min-desc) {
     min-width: 145px;
     padding: 11px 0;
-    background: $color-text;
+    background: $color-text-header-fork;
+    font-family: $ff-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
     color: #fff;
 
     &:hover {
       background: #fff;
-      color: $color-text;
+      color: $color-text-header-fork;
+      transition: 0.3s linear;
     }
   }
 }
