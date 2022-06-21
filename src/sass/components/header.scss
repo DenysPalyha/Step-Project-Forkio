@@ -171,6 +171,7 @@
 .header__burger {
   @include flex;
   flex-direction: column;
+  z-index: 110;
 
   @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
     display: none;
@@ -226,9 +227,9 @@
   top: -432px;
   left: 50%;
   transform: translateX(-50%);
-  background: $bg-color-mod-menu;
   z-index: 100;
   transition: 0.3s linear;
+  background: $bg-color-mod-menu;
 }
 
 .show {
