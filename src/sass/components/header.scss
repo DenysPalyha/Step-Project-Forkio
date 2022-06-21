@@ -3,18 +3,82 @@
 
 .header {
   min-width: 320px;
-  background-color: $bg-color-header;
+  background: $bg-color-header;
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $bp-min-desc) {
+    width: 100%;
+    background: transparent;
+  }
 }
 
 .header__container {
   min-width: 320px;
   padding: 0 10px;
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    min-width: 768px;
+  }
+
+  @media (min-width: $bp-min-desc) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.header__wrapper-inner {
+  @media (min-width: $bp-min-desc) {
+    @include flex($justify: space-between);
+    padding-top: 31px;
+  }
 }
 
 .header__wrapper {
   padding: 32px 0 30px;
   width: 100%;
   @include flex($justify: space-between);
+
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    padding: 22px 0 23px;
+  }
+  @media (min-width: $bp-min-desc) {
+    padding: 0;
+  }
+}
+
+.header__logo-link {
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    @include flex;
+
+    &:active .header__logo-img {
+      background-image: url(../../images/icon/logo-hover-1.png);
+    }
+
+    &:focus .header__logo-img {
+      background-image: url(../../images/icon/logo-hover-1.png);
+    }
+
+    &:active .header__logo-text {
+      color: #fff;
+    }
+
+    &:focus .header__logo-text {
+      color: #fff;
+    }
+  }
+
+  @media (min-width: $bp-min-desc) {
+    @include flex;
+
+    &:hover .header__logo-img {
+      background-image: url(../../images/icon/logo-hover-1.png);
+    }
+
+    &:hover .header__logo-text {
+      color: #fff;
+    }
+  }
 }
 
 .header__logo-img {
@@ -28,6 +92,28 @@
 
 .header__logo-text {
   display: none;
+
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    display: block;
+    margin-left: 17px;
+    font-family: $ff-lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    color: $color-text;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $bp-min-desc) {
+    display: block;
+    margin-left: 17px;
+    font-family: $ff-lato;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    color: $color-text;
+    text-transform: uppercase;
+  }
 }
 
 .btn-settings {
@@ -43,11 +129,37 @@
   padding: 11px 0;
   background: $color-text;
   color: #fff;
+
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    min-width: 145px;
+
+    &:active {
+      background: #fff;
+      color: $color-text;
+    }
+
+    &:focus {
+      background: #fff;
+      color: $color-text;
+    }
+  }
+
+  @media (min-width: $bp-min-desc) {
+    display: none;
+  }
 }
 
 .header__burger {
   @include flex;
   flex-direction: column;
+
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    display: none;
+  }
+
+  @media (min-width: $bp-min-desc) {
+    display: none;
+  }
 }
 
 .header__burger-btn {
@@ -147,5 +259,83 @@
 
   &:focus::before {
     opacity: 1;
+  }
+}
+
+.header__list-tab {
+  display: none;
+
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    padding-bottom: 18px;
+    @include flex;
+  }
+
+  @media (min-width: $bp-min-desc) {
+    min-width: 675px;
+    @include flex($justify: space-between);
+  }
+}
+
+.header__item-tab {
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    margin-right: 47px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--btn {
+      display: none;
+    }
+  }
+
+  @media (min-width: $bp-min-desc) {
+    &--btn {
+      display: block;
+    }
+  }
+}
+
+.header__item-tab-link {
+  @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
+    font-family: $ff-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: $color-text;
+
+    &:active {
+      color: #fff;
+    }
+
+    &:focus {
+      color: #fff;
+    }
+  }
+
+  @media (min-width: $bp-min-desc) {
+    font-family: $ff-family;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    color: $color-text;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.header__item-tab-button {
+  @media (min-width: $bp-min-desc) {
+    min-width: 145px;
+    padding: 11px 0;
+    background: $color-text;
+    color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $color-text;
+    }
   }
 }
