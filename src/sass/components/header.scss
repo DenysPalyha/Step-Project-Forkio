@@ -28,10 +28,12 @@
   padding: 0 10px;
   @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
     min-width: 768px;
+    padding: 0 10px;
   }
 
   @media (min-width: $bp-min-desc) {
     max-width: 1200px;
+    padding: 0 10px;
     margin: 0 auto;
   }
 }
