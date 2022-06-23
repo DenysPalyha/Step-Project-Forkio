@@ -240,13 +240,13 @@
 .header__item {
   position: relative;
   min-width: 292px;
-  padding: 29px 0 21px;
   border-bottom: 2px solid rgba(78, 70, 70, 0.7);
 }
 
 .header__item-link {
   display: block;
   margin-left: 35px;
+  padding: 29px 0 21px;
   font-family: $ff-family;
   font-weight: 400;
   font-size: 26px;
