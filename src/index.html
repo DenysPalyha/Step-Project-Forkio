@@ -1,18 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Step-project-Forkio</title>
     <link rel="stylesheet" href="./css/styles.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="./script/scripts.min.js"></script>
-</head>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__position">
+        <div class="header__container">
+          <div class="header__wrapper-inner">
+            <div class="header__wrapper">
+              <!-- logo -->
+              <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                  <div class="header__logo-img"></div>
+                  <p class="header__logo-text">Forkio</p>
+                </a>
+              </div>
+              <!-- logo -->
+              <div class="header__wrapper-btn">
+                <button class="header__btn-buy btn-settings">Buy Now</button>
+              </div>
+              <!-- burger-btn -->
+              <button class="header__burger btn-settings">
+                <span
+                  class="header__burger-btn header__burger-btn--first"
+                ></span>
+                <span
+                  class="header__burger-btn header__burger-btn--second"
+                ></span>
+                <span
+                  class="header__burger-btn header__burger-btn--third"
+                ></span>
+              </button>
+              <!-- burger-btn -->
+            </div>
+            <!-- menu-mob -->
+            <nav>
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#" class="header__item-link">Overview</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item-link">About Fork</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item-link">Buying Options</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__item-link">Support</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- menu-mob-->
+            <!-- menu-tablet-desc -->
+            <nav>
+              <ul class="header__list-tab">
+                <li class="header__item-tab">
+                  <a href="#" class="header__item-tab-link">Overview</a>
+                </li>
+                <li class="header__item-tab">
+                  <a href="#" class="header__item-tab-link">About Fork</a>
+                </li>
+                <li class="header__item-tab">
+                  <a href="#" class="header__item-tab-link">Buying Options</a>
+                </li>
+                <li class="header__item-tab">
+                  <a href="#" class="header__item-tab-link">Support</a>
+                </li>
+                <li class="header__item-tab header__item-tab--btn">
+                  <button class="header__item-tab-button btn-settings">
+                    Buy Now
+                  </button>
+                </li>
+              </ul>
+            </nav>
+            <!-- menu-tablet-desc -->
+          </div>
+        </div>
+      </div>
+    </header>
 
-<body>
-    <section class="section-present">
+    <main>
+      <section class="fork">
+        <div class="fork__bg-images">
+          <div class="fork__container">
+            <div class="fork__wrapper">
+              <h2 class="fork__heading">Fork App</h2>
+              <p class="fork__paragraph">
+                A Real Gamechanger In The World Of Web-Development
+              </p>
+              <p class="fork__text">v. 2.8 For Mac and Windows</p>
+            </div>
+            <div class="fork__wrapper-button">
+              <button class="fork__button btn-settings">
+                Download For Free Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="fork__container-text">
+          <p class="fork__text-period">Unlimited 30-Days Trial Period</p>
+        </div>
+      </section>
+      <section class="section-present">
         <h1 class="section-present__title"> Revolutionary editor</h1>
         <h3 class="section-present__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. </h3>
         <ul class="section-present__icons">
@@ -72,6 +180,7 @@
         <img class="section-features__editor-mob" src="./images/features/features-editor-mob.png" alt="editor">
         <img class="section-features__editor-tab" src="./images/features/features-editor-tab.png" alt="editor">
     </section>
-</body>
-
+    </main>
+  </body>
 </html>
+
