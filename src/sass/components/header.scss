@@ -63,11 +63,11 @@
     @include flex;
 
     &:active .header__logo-img {
-      background-image: url(../../images/icon/logo-hover-1.png);
+      background-image: url(../images/icon/logo-hover-1.png);
     }
 
     &:focus .header__logo-img {
-      background-image: url(../../images/icon/logo-hover-1.png);
+      background-image: url(../images/icon/logo-hover-1.png);
     }
 
     &:active .header__logo-text {
@@ -83,7 +83,7 @@
     @include flex;
 
     &:hover .header__logo-img {
-      background-image: url(../../images/icon/logo-hover-1.png);
+      background-image: url(../images/icon/logo-hover-1.png);
       transition: 0.3s linear;
     }
 
@@ -97,7 +97,7 @@
 .header__logo-img {
   width: 43px;
   height: 41px;
-  background-image: url(../../images/icon/Logo-1.png);
+  background-image: url(../images/icon/Logo-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
