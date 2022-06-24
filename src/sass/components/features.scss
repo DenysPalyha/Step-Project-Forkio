@@ -6,6 +6,9 @@
     padding-right: 10px;
     min-width: $min-bp;
     margin: auto;
+    @media (min-width: $tablet-bp) {
+        min-width: 768px;
+    }
     @media (min-width: $desk-bp) {
         background-color: $features-color-background-desk;
         background-size: 100%;
