@@ -4,8 +4,16 @@
 .section-present {
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 80px;
     min-width: $min-bp;
     margin: auto;
+    @media (min-width: $tablet-bp) {
+        min-width: 768px;
+        padding-top: 93px;
+    }
+    @media (min-width: $desk-bp) {
+        padding-top: 66px;
+    }
 }
 
 .section-present__title {
