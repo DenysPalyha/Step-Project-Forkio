@@ -9,7 +9,7 @@
     "build": "gulp build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://DenysPalyha.github.io/step",
+  "homepage": "https://DenysPalyha.github.io/Step-Project-Forkio",
   "repository": {
     "type": "git",
     "url": "https://github.com/DenysPalyha"
