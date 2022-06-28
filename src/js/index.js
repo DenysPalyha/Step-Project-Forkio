@@ -23,8 +23,8 @@ function closeMenuOutside(event) {
   if (!clickOnButtonBurgerMenu) {
     const clickMenuLink = event.composedPath().includes(isMenuItemLink);
     if (!clickMenuLink) {
-      itemHeaderBurger.forEach((item) => item.classList.toggle("active"));
-      menuBurger.classList.toggle("show");
+      itemHeaderBurger.forEach((item) => item.classList.remove("active"));
+      menuBurger.classList.remove("show");
       document.removeEventListener("click", closeMenuOutside);
     }
   }
