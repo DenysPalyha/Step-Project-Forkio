@@ -115,14 +115,17 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  border: 2px solid $color-text-header-fork;
   color: #fff;
   &:active {
     background: #fff;
     color: $color-text-header-fork;
+    border: 2px solid $color-text-header-fork;
   }
   &:focus {
     background: #fff;
     color: $color-text-header-fork;
+    border: 2px solid $color-text-header-fork;
   }
   @media (min-width: $bp-min-tablet) and (max-width: $bp-max-tablet) {
     min-width: 390px;
@@ -135,6 +138,7 @@
     &:hover {
       background: #fff;
       color: $color-text-header-fork;
+      border: 2px solid $color-text-header-fork;
       transition: 0.3s linear;
     }
   }
